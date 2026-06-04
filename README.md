@@ -44,3 +44,6 @@ the current scope.
 Drink product photography is sourced from the official
 [Gong Cha Vietnam menu](https://gongcha.com.vn/danh-muc/menu-hien-tai/) for this
 non-commercial academic redesign prototype.
+
+The homepage tea-house hero backdrop was AI-generated for this redesign and
+combined with the official product photography above.
