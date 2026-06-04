@@ -20,7 +20,7 @@ around a clearer StoryBrand customer journey:
 ## Pages
 
 - `index.html` - StoryBrand homepage and Tea Finder
-- `about.html` - Brand story, values, and tea-making process
+- `about.html` - Brand story, premium tea philosophy, drink stories, and tea-making process
 - `menu.html` - Full interactive menu and ordering flow
 - `stores.html` - Store search and directory
 - `contact.html` - Contact topics, form, and FAQ
@@ -47,3 +47,6 @@ non-commercial academic redesign prototype.
 
 The homepage tea-house hero backdrop was AI-generated for this redesign and
 combined with the official product photography above.
+
+The premium tea narrative and "tribute tea" framing reference the official
+[Gong Cha Vietnam brand introduction](https://gongcha.com.vn/gioi-thieu/).
