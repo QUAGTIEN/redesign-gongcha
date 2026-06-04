@@ -1,25 +1,34 @@
 const products = [
-  { id: 1, name: "Trà sữa trân châu đường đen", category: "signature milk", price: 59000, type: "milk-cup", badge: "BEST SELLER", desc: "Trà sữa mềm mại, trân châu nấu mới với đường đen.", tags: ["Béo ngọt", "Trân châu"] },
-  { id: 2, name: "Trà Oolong đào hồng", category: "fruit", price: 57000, type: "fruit-cup", badge: "MỚI", desc: "Đào hồng tươi mát trên nền Oolong thơm sâu.", tags: ["Chua nhẹ", "Tươi mát"] },
-  { id: 3, name: "Trà Alisan kem sữa", category: "signature pure", price: 55000, type: "green-cup", badge: "SIGNATURE", desc: "Trà Alisan thanh nhẹ với lớp kem sữa mặn ngọt.", tags: ["Thanh nhẹ", "Kem sữa"] },
-  { id: 4, name: "Trà sữa Oolong 3J", category: "milk signature", price: 63000, type: "milk-cup", badge: "BEST SELLER", desc: "Ba loại topping vui miệng trong vị Oolong đậm.", tags: ["Đậm trà", "Nhiều topping"] },
-  { id: 5, name: "Trà xanh chanh dây", category: "fruit", price: 53000, type: "green-cup", badge: "REFRESH", desc: "Chanh dây chua thanh, thơm mát cùng trà xanh.", tags: ["Chua thanh", "Ít ngọt"] },
-  { id: 6, name: "Trà đen kem sữa", category: "signature pure", price: 52000, type: "amber-cup", badge: "SIGNATURE", desc: "Vị trà đen rõ nét cân bằng cùng kem sữa.", tags: ["Đậm trà", "Kem sữa"] },
-  { id: 7, name: "Trà sữa khoai môn", category: "milk", price: 57000, type: "milk-cup", badge: "COMFORT", desc: "Khoai môn béo bùi, ngọt dịu và dễ thưởng thức.", tags: ["Béo bùi", "Ngọt dịu"] },
-  { id: 8, name: "Trà Oolong nguyên chất", category: "pure", price: 47000, type: "amber-cup", badge: "PURE TEA", desc: "Hương Oolong thơm sâu, hậu vị thanh sạch.", tags: ["Đậm trà", "Không sữa"] }
+  { id: 1, name: "Trà sữa trân châu đen", category: "signature milk", price: 59000, type: "milk-cup", image: "assets/products/milk-tea-pearl.png", badge: "BEST SELLER", desc: "Trà sữa mềm mại cùng trân châu đen dai giòn.", tags: ["Béo ngọt", "Trân châu"], moods: ["comfort"], tastes: ["milk", "topping"], colors: ["cream"], sweet: "Vừa", tea: "Nhẹ", fresh: "Dịu" },
+  { id: 2, name: "Trà xanh đào", category: "fruit", price: 57000, type: "fruit-cup", image: "assets/products/peach-green-tea.png", badge: "TƯƠI MÁT", desc: "Hương đào mọng quả trên nền trà xanh thanh nhẹ.", tags: ["Trái cây", "Tươi mát"], moods: ["refresh"], tastes: ["fruit"], colors: ["yellow"], sweet: "Nhẹ", tea: "Vừa", fresh: "Cao" },
+  { id: 3, name: "Trà Alisan kem sữa", category: "signature pure", price: 55000, type: "green-cup", image: "assets/products/alisan-milkfoam.png", badge: "SIGNATURE", desc: "Trà Alisan thanh nhẹ với lớp kem sữa mặn ngọt.", tags: ["Thanh nhẹ", "Kem sữa"], moods: ["comfort", "focus"], tastes: ["tea", "milk"], colors: ["yellow", "cream"], sweet: "Nhẹ", tea: "Vừa", fresh: "Vừa" },
+  { id: 4, name: "Trà sữa Oolong 3J", category: "milk signature", price: 63000, type: "milk-cup", image: "assets/products/oolong-3j.png", badge: "BEST SELLER", desc: "Ba loại topping vui miệng trong vị Oolong đậm.", tags: ["Đậm trà", "Nhiều topping"], moods: ["adventure"], tastes: ["topping", "milk"], colors: ["cream"], sweet: "Vừa", tea: "Cao", fresh: "Vui" },
+  { id: 5, name: "Trà xanh nguyên chất", category: "fruit pure", price: 53000, type: "green-cup", image: "assets/products/green-tea.png", badge: "REFRESH", desc: "Trà xanh thanh sạch, tươi mát và nhẹ nhàng.", tags: ["Thanh mát", "Ít ngọt"], moods: ["refresh", "focus"], tastes: ["tea", "fruit"], colors: ["yellow"], sweet: "Nhẹ", tea: "Vừa", fresh: "Cao" },
+  { id: 6, name: "Trà đen kem sữa", category: "signature pure", price: 52000, type: "amber-cup", image: "assets/products/black-tea-milkfoam.png", badge: "SIGNATURE", desc: "Vị trà đen rõ nét cân bằng cùng kem sữa.", tags: ["Đậm trà", "Kem sữa"], moods: ["focus"], tastes: ["tea", "milk"], colors: ["amber"], sweet: "Nhẹ", tea: "Cao", fresh: "Vừa" },
+  { id: 7, name: "Trà sữa khoai môn", category: "milk", price: 57000, type: "milk-cup", image: "assets/products/taro-milk-tea.png", badge: "COMFORT", desc: "Khoai môn béo bùi, ngọt dịu và dễ thưởng thức.", tags: ["Béo bùi", "Ngọt dịu"], moods: ["comfort", "adventure"], tastes: ["milk"], colors: ["purple"], sweet: "Vừa", tea: "Nhẹ", fresh: "Dịu" },
+  { id: 8, name: "Trà Oolong nguyên chất", category: "pure", price: 47000, type: "amber-cup", image: "assets/products/oolong-tea.png", badge: "PURE TEA", desc: "Hương Oolong thơm sâu, hậu vị thanh sạch.", tags: ["Đậm trà", "Không sữa"], moods: ["focus", "refresh"], tastes: ["tea"], colors: ["amber"], sweet: "Không", tea: "Cao", fresh: "Vừa" }
 ];
 
-const moodData = {
-  refresh: { name: "Trà Oolong Đào Hồng", copy: "Vị đào tươi mát kết hợp cùng nền trà Oolong thơm sâu, phù hợp cho một ngày cần thêm năng lượng.", sweet: "Nhẹ", tea: "Vừa", fresh: "Cao", type: "fruit-cup", id: 2 },
-  comfort: { name: "Trà Sữa Khoai Môn", copy: "Vị khoai môn béo bùi, ngọt dịu và mềm mại cho những lúc bạn muốn tự thưởng mình.", sweet: "Vừa", tea: "Nhẹ", fresh: "Dịu", type: "milk-cup", id: 7 },
-  focus: { name: "Trà Đen Kem Sữa", copy: "Nền trà đen rõ nét, hậu vị sâu và lớp kem sữa cân bằng giúp bạn tỉnh táo.", sweet: "Nhẹ", tea: "Cao", fresh: "Vừa", type: "amber-cup", id: 6 },
-  adventure: { name: "Trà Sữa Oolong 3J", copy: "Ba kết cấu topping trong một ly Oolong đậm vị, dành cho ngày bạn muốn thử điều mới.", sweet: "Vừa", tea: "Cao", fresh: "Vui", type: "milk-cup", id: 4 }
+const quizLabels = {
+  refresh: "một ngày cần sự tươi mới",
+  comfort: "tâm trạng muốn được chiều chuộng",
+  focus: "lúc cần tập trung và tỉnh táo",
+  adventure: "mong muốn thử điều khác biệt",
+  fruit: "khẩu vị yêu trái cây",
+  milk: "sở thích béo mịn",
+  tea: "tình yêu dành cho vị trà",
+  topping: "niềm vui từ nhiều topping",
+  yellow: "sắc vàng tươi sáng",
+  cream: "gam kem dịu dàng",
+  purple: "sắc tím mộng mơ",
+  amber: "màu hổ phách sâu lắng"
 };
 
 let activeFilter = "all";
 let activeProduct = products[0];
 let basePrice = activeProduct.price;
 let cart = [];
+const quizAnswers = {};
 
 const formatPrice = value => `${new Intl.NumberFormat("vi-VN").format(value)}đ`;
 const renderIcons = () => window.lucide?.createIcons();
@@ -43,7 +52,7 @@ function renderProducts() {
       <div class="product-visual">
         <span class="product-badge">${product.badge}</span>
         <button class="favorite" type="button" aria-label="Thêm ${product.name} vào yêu thích"><i data-lucide="heart"></i></button>
-        <div class="mini-cup ${product.type}"><span></span></div>
+        <img class="product-photo" src="${product.image}" alt="${product.name}">
       </div>
       <div class="product-info">
         <h3>${product.name}</h3>
@@ -59,6 +68,52 @@ function renderProducts() {
 
   const emptyState = document.querySelector("#empty-state");
   if (emptyState) emptyState.style.display = visible.length ? "none" : "block";
+  renderIcons();
+}
+
+function getQuizRecommendations() {
+  return products
+    .map(product => {
+      let score = 0;
+      if (product.moods.includes(quizAnswers.mood)) score += 4;
+      if (product.tastes.includes(quizAnswers.taste)) score += 4;
+      if (product.colors.includes(quizAnswers.color)) score += 2;
+      return { product, score };
+    })
+    .sort((a, b) => b.score - a.score || a.product.id - b.product.id)
+    .slice(0, 2);
+}
+
+function renderQuizRecommendations() {
+  const container = document.querySelector("#quiz-results-grid");
+  const results = document.querySelector("#quiz-results");
+  if (!container || !results) return;
+
+  container.innerHTML = getQuizRecommendations().map(({ product }, index) => `
+    <article class="quiz-result-card">
+      <div class="quiz-result-visual">
+        <span>${index === 0 ? "HỢP NHẤT" : "LỰA CHỌN THỨ HAI"}</span>
+        <img src="${product.image}" alt="${product.name}">
+      </div>
+      <div class="quiz-result-copy">
+        <p class="recommend-label">GỢI Ý ${index + 1}</p>
+        <h3>${product.name}</h3>
+        <p>${product.desc} Phù hợp với ${quizLabels[quizAnswers.mood]}, ${quizLabels[quizAnswers.taste]} và ${quizLabels[quizAnswers.color]} của bạn.</p>
+        <div class="taste-meter">
+          <span>Độ ngọt <b>${product.sweet}</b></span>
+          <span>Vị trà <b>${product.tea}</b></span>
+          <span>Tươi mát <b>${product.fresh}</b></span>
+        </div>
+        <div class="quiz-result-actions">
+          <button class="primary" type="button" data-product="${product.id}">Tùy chỉnh món này <i data-lucide="sliders-horizontal"></i></button>
+          <a class="text-cta" href="menu.html">Xem thực đơn <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+  `).join("");
+
+  results.hidden = false;
+  results.scrollIntoView({ behavior: "smooth", block: "start" });
   renderIcons();
 }
 
@@ -111,7 +166,11 @@ function openCustomizer(id) {
   basePrice = activeProduct.price;
   document.querySelector("#custom-name").textContent = activeProduct.name;
   document.querySelector("#custom-price").textContent = formatPrice(activeProduct.price);
-  document.querySelector(".customizer-product .mini-cup").className = `mini-cup ${activeProduct.type}`;
+  const customImage = document.querySelector(".customizer-product .custom-product-photo");
+  if (customImage) {
+    customImage.src = activeProduct.image;
+    customImage.alt = activeProduct.name;
+  }
   resetOptions();
   updateTotal();
   showBackdrop();
@@ -134,7 +193,7 @@ function renderCart() {
   } else {
     container.innerHTML = cart.map(item => `
       <div class="cart-item">
-        <div class="mini-cup ${item.type}"><span></span></div>
+        <img class="cart-product-photo" src="${item.image}" alt="${item.name}">
         <div><strong>${item.name}</strong><small>${item.options}</small></div>
         <b>${formatPrice(item.price)}</b>
       </div>
@@ -171,17 +230,18 @@ document.addEventListener("click", event => {
   const customize = event.target.closest("[data-product]");
   if (customize) openCustomizer(customize.dataset.product);
 
-  const mood = event.target.closest("[data-mood]");
-  if (mood) {
-    document.querySelectorAll(".mood-card").forEach(card => card.classList.toggle("active", card === mood));
-    const data = moodData[mood.dataset.mood];
-    document.querySelector("#recommend-name").textContent = data.name;
-    document.querySelector("#recommend-copy").textContent = data.copy;
-    document.querySelector("#sweet-meter").textContent = data.sweet;
-    document.querySelector("#tea-meter").textContent = data.tea;
-    document.querySelector("#fresh-meter").textContent = data.fresh;
-    document.querySelector("#recommend-cup").className = `recommend-cup ${data.type}`;
-    document.querySelector("#recommend-order").dataset.product = data.id;
+  const quizOption = event.target.closest("[data-quiz-question]");
+  if (quizOption) {
+    const question = quizOption.dataset.quizQuestion;
+    quizAnswers[question] = quizOption.dataset.quizValue;
+    document.querySelectorAll(`[data-quiz-question="${question}"]`).forEach(button => button.classList.toggle("active", button === quizOption));
+    const answered = Object.keys(quizAnswers).length;
+    const submit = document.querySelector("#quiz-submit");
+    const progress = document.querySelector("#quiz-progress-fill");
+    const status = document.querySelector("#quiz-status");
+    if (submit) submit.disabled = answered < 3;
+    if (progress) progress.style.width = `${answered / 3 * 100}%`;
+    if (status) status.textContent = answered === 3 ? "Đã sẵn sàng tìm món" : `Đã trả lời ${answered}/3 câu`;
   }
 
   const option = event.target.closest("[data-option-group] button");
@@ -213,7 +273,16 @@ document.querySelector(".cart-button")?.addEventListener("click", event => {
   }
 });
 backdrop?.addEventListener("click", closeDrawers);
-document.querySelector("#recommend-order")?.addEventListener("click", () => openCustomizer(document.querySelector("#recommend-order").dataset.product || 2));
+document.querySelector("#quiz-submit")?.addEventListener("click", renderQuizRecommendations);
+document.querySelector("#quiz-reset")?.addEventListener("click", () => {
+  Object.keys(quizAnswers).forEach(key => delete quizAnswers[key]);
+  document.querySelectorAll("[data-quiz-question]").forEach(button => button.classList.remove("active"));
+  document.querySelector("#quiz-submit").disabled = true;
+  document.querySelector("#quiz-progress-fill").style.width = "0";
+  document.querySelector("#quiz-status").textContent = "Đã trả lời 0/3 câu";
+  document.querySelector("#quiz-results").hidden = true;
+  document.querySelector("#finder").scrollIntoView({ behavior: "smooth", block: "start" });
+});
 
 document.querySelector("#add-cart")?.addEventListener("click", () => {
   const size = document.querySelector('[data-option-group="size"] .selected').dataset.value;
@@ -221,7 +290,7 @@ document.querySelector("#add-cart")?.addEventListener("click", () => {
   const ice = document.querySelector('[data-option-group="ice"] .selected').dataset.value;
   const toppings = [...document.querySelectorAll(".topping-option input:checked")].map(input => input.value);
   const price = Number(document.querySelector("#total-price").textContent.replace(/\D/g, ""));
-  cart.push({ name: activeProduct.name, type: activeProduct.type, price, options: `Size ${size} · Đường ${sugar} · ${ice}${toppings.length ? ` · ${toppings.join(", ")}` : ""}` });
+  cart.push({ name: activeProduct.name, image: activeProduct.image, price, options: `Size ${size} · Đường ${sugar} · ${ice}${toppings.length ? ` · ${toppings.join(", ")}` : ""}` });
   renderCart();
   closeDrawers();
   openCart();

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <div class="announcement">
@@ -41,14 +41,24 @@
 
   <main id="top">
     <section class="hero">
-      <img src="assets/hero-tea-lineup.png" alt="Bốn ly trà tươi với nhiều hương vị" class="hero-image">
+      <div class="hero-product-stage" aria-label="Các thức uống thật từ menu Gong Cha">
+        <span class="hero-product-backdrop"></span>
+        <img class="hero-product hero-product-one" src="assets/products/peach-green-tea.png" alt="Trà xanh đào Gong Cha">
+        <img class="hero-product hero-product-two" src="assets/products/milk-tea-pearl.png" alt="Trà sữa trân châu đen Gong Cha">
+        <img class="hero-product hero-product-three" src="assets/products/taro-milk-tea.png" alt="Trà sữa khoai môn Gong Cha">
+        <img class="hero-product hero-product-four" src="assets/products/black-tea-milkfoam.png" alt="Trà đen kem sữa Gong Cha">
+        <small>Ảnh sản phẩm thật từ Gong Cha Vietnam</small>
+      </div>
       <div class="hero-overlay"></div>
       <div class="hero-copy">
         <p class="eyebrow">KHÔNG CẦN ĐOÁN MÓN</p>
         <h1>Tìm đúng ly trà.<br><em>Tận hưởng đúng tâm trạng.</em></h1>
         <p class="hero-description">Trả lời vài câu hỏi đơn giản, nhận gợi ý phù hợp và tùy chỉnh ly Gong Cha theo đúng khẩu vị của bạn.</p>
         <div class="hero-actions">
-          <button class="primary" type="button" data-scroll="#finder">Tìm ly trà của tôi <i data-lucide="sparkles"></i></button>
+          <button class="primary hero-primary-cta" type="button" data-scroll="#finder">
+            <span>Tìm ly trà của tôi<small>3 câu hỏi · nhận 2 gợi ý</small></span>
+            <i data-lucide="sparkles"></i>
+          </button>
           <button class="secondary" type="button" data-scroll="#story-plan">Xem cách hoạt động <i data-lucide="arrow-down"></i></button>
         </div>
         <div class="hero-proof" aria-label="Cam ket cua Gong Cha">
@@ -126,8 +136,8 @@
         <p>Không cần đọc hết menu. Chỉ cần bắt đầu từ điều bạn đang muốn.</p>
       </div>
       <div class="story-plan-grid">
-        <article><span>01</span><i data-lucide="smile"></i><h3>Chọn tâm trạng</h3><p>Cho chúng tôi biết hôm nay bạn muốn thanh mát, béo ngọt, đậm trà hay một trải nghiệm mới.</p></article>
-        <article><span>02</span><i data-lucide="sparkles"></i><h3>Nhận gợi ý</h3><p>Tea Finder chọn một thức uống phù hợp và giải thích rõ hương vị cho bạn.</p></article>
+        <article><span>01</span><i data-lucide="smile"></i><h3>Chia sẻ sở thích</h3><p>Trả lời ba câu hỏi vui về tâm trạng, khẩu vị và màu sắc thu hút bạn hôm nay.</p></article>
+        <article><span>02</span><i data-lucide="sparkles"></i><h3>Nhận hai gợi ý</h3><p>Tea Finder so sánh câu trả lời và đề xuất hai thức uống phù hợp nhất cho bạn.</p></article>
         <article><span>03</span><i data-lucide="cup-soda"></i><h3>Tùy chỉnh và đặt</h3><p>Chọn size, đường, đá, topping rồi nhận ly trà đúng theo cách bạn muốn.</p></article>
       </div>
       <button class="primary plan-cta" type="button" data-scroll="#finder">Bắt đầu tìm ly trà <i data-lucide="arrow-right"></i></button>
@@ -135,54 +145,52 @@
 
     <section class="finder section-pad" id="finder">
       <div class="section-heading">
-        <p class="eyebrow">KHÔNG BIẾT CHỌN MÓN NÀO?</p>
-        <h2>Hôm nay bạn muốn vị gì?</h2>
-        <p>Chọn một cảm giác, chúng tôi sẽ gợi ý ly trà phù hợp nhất.</p>
+        <p class="eyebrow">TEA FINDER CÁ NHÂN HÓA</p>
+        <h2>Ba câu hỏi. Hai ly trà dành cho bạn.</h2>
+        <p>Không có câu trả lời đúng hay sai. Hãy chọn điều giống bạn nhất hôm nay.</p>
       </div>
-      <div class="mood-grid">
-        <button class="mood-card active" type="button" data-mood="refresh">
-          <span class="mood-symbol">01</span>
-          <i data-lucide="sun"></i>
-          <strong>Thanh mát</strong>
-          <small>Chua nhẹ, tươi mới</small>
-        </button>
-        <button class="mood-card" type="button" data-mood="comfort">
-          <span class="mood-symbol">02</span>
-          <i data-lucide="heart"></i>
-          <strong>Béo ngọt</strong>
-          <small>Mềm mại, dễ chịu</small>
-        </button>
-        <button class="mood-card" type="button" data-mood="focus">
-          <span class="mood-symbol">03</span>
-          <i data-lucide="zap"></i>
-          <strong>Đậm vị trà</strong>
-          <small>Thơm sâu, tỉnh táo</small>
-        </button>
-        <button class="mood-card" type="button" data-mood="adventure">
-          <span class="mood-symbol">04</span>
-          <i data-lucide="wand-sparkles"></i>
-          <strong>Thử vị mới</strong>
-          <small>Bất ngờ, khác biệt</small>
-        </button>
+      <div class="quiz-progress" aria-live="polite">
+        <span id="quiz-status">Đã trả lời 0/3 câu</span>
+        <div><span id="quiz-progress-fill"></span></div>
       </div>
-      <div class="recommendation">
-        <div>
-          <span class="recommend-label">GỢI Ý CHO BẠN</span>
-          <h3 id="recommend-name">Trà Oolong Đào Hồng</h3>
-          <p id="recommend-copy">Vị đào tươi mát kết hợp cùng nền trà oolong thơm sâu, phù hợp cho một ngày cần thêm năng lượng.</p>
-          <div class="taste-meter">
-            <span>Độ ngọt <b id="sweet-meter">Nhe</b></span>
-            <span>Vị trà <b id="tea-meter">Vua</b></span>
-            <span>Tươi mát <b id="fresh-meter">Cao</b></span>
+      <div class="quiz-questions">
+        <fieldset class="quiz-question">
+          <legend><span>01</span> Tâm trạng của bạn hôm nay?</legend>
+          <div class="quiz-option-grid">
+            <button type="button" data-quiz-question="mood" data-quiz-value="refresh"><i data-lucide="sun"></i><strong>Cần tươi mới</strong><small>Nhẹ nhàng, sảng khoái</small></button>
+            <button type="button" data-quiz-question="mood" data-quiz-value="comfort"><i data-lucide="heart"></i><strong>Muốn được chiều</strong><small>Êm dịu, dễ chịu</small></button>
+            <button type="button" data-quiz-question="mood" data-quiz-value="focus"><i data-lucide="zap"></i><strong>Cần tập trung</strong><small>Đậm vị, tỉnh táo</small></button>
+            <button type="button" data-quiz-question="mood" data-quiz-value="adventure"><i data-lucide="wand-sparkles"></i><strong>Muốn thử điều mới</strong><small>Vui miệng, bất ngờ</small></button>
           </div>
-          <button class="primary" type="button" id="recommend-order">Tùy chỉnh ly này <i data-lucide="arrow-right"></i></button>
+        </fieldset>
+        <fieldset class="quiz-question">
+          <legend><span>02</span> Khẩu vị khiến bạn thích nhất?</legend>
+          <div class="quiz-option-grid">
+            <button type="button" data-quiz-question="taste" data-quiz-value="fruit"><i data-lucide="citrus"></i><strong>Trái cây</strong><small>Chua ngọt, mọng vị</small></button>
+            <button type="button" data-quiz-question="taste" data-quiz-value="milk"><i data-lucide="milk"></i><strong>Béo mịn</strong><small>Ngọt dịu, mềm mại</small></button>
+            <button type="button" data-quiz-question="taste" data-quiz-value="tea"><i data-lucide="leaf"></i><strong>Đậm vị trà</strong><small>Thơm sâu, hậu vị rõ</small></button>
+            <button type="button" data-quiz-question="taste" data-quiz-value="topping"><i data-lucide="circle-dot"></i><strong>Nhiều topping</strong><small>Dai giòn, vui miệng</small></button>
+          </div>
+        </fieldset>
+        <fieldset class="quiz-question">
+          <legend><span>03</span> Chọn màu sắc thu hút bạn nhất?</legend>
+          <div class="quiz-option-grid color-options">
+            <button type="button" data-quiz-question="color" data-quiz-value="yellow"><span class="color-swatch yellow"></span><strong>Vàng tươi</strong><small>Tươi sáng</small></button>
+            <button type="button" data-quiz-question="color" data-quiz-value="cream"><span class="color-swatch cream"></span><strong>Kem sữa</strong><small>Dịu dàng</small></button>
+            <button type="button" data-quiz-question="color" data-quiz-value="purple"><span class="color-swatch purple"></span><strong>Tím khoai môn</strong><small>Mộng mơ</small></button>
+            <button type="button" data-quiz-question="color" data-quiz-value="amber"><span class="color-swatch amber"></span><strong>Hổ phách</strong><small>Sâu lắng</small></button>
+          </div>
+        </fieldset>
+      </div>
+      <button class="primary quiz-submit" type="button" id="quiz-submit" disabled>
+        Xem 2 gợi ý dành cho tôi <i data-lucide="sparkles"></i>
+      </button>
+      <div class="quiz-results" id="quiz-results" hidden>
+        <div class="quiz-results-heading">
+          <div><p class="eyebrow">KẾT QUẢ DÀNH RIÊNG CHO BẠN</p><h2>Hai lựa chọn đáng thử hôm nay.</h2></div>
+          <button class="secondary compact" type="button" id="quiz-reset"><i data-lucide="rotate-ccw"></i> Làm lại</button>
         </div>
-        <div class="recommend-cup fruit-cup" id="recommend-cup">
-          <span class="cup-lid"></span>
-          <span class="cup-brand">GONG<br>CHA</span>
-          <span class="cup-ice"></span>
-          <span class="cup-pearl"></span>
-        </div>
+        <div class="quiz-results-grid" id="quiz-results-grid"></div>
       </div>
     </section>
 
@@ -309,7 +317,7 @@
       <button class="icon-button" type="button" id="close-customizer" aria-label="Đóng"><i data-lucide="x"></i></button>
     </div>
     <div class="customizer-product">
-      <div class="mini-cup milk-cup"><span></span></div>
+      <img class="custom-product-photo" src="assets/products/milk-tea-pearl.png" alt="Trà sữa trân châu đen">
       <div>
         <strong id="custom-price">59.000đ</strong>
         <small>Giá đã bao gồm topping mặc định</small>
@@ -363,6 +371,6 @@
   </aside>
 
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

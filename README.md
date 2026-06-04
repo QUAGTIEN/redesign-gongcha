@@ -38,3 +38,9 @@ Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 This is an interactive front-end prototype created for academic purposes.
 Product and ordering data are simulated; a backend and database are outside
 the current scope.
+
+## Image Source
+
+Drink product photography is sourced from the official
+[Gong Cha Vietnam menu](https://gongcha.com.vn/danh-muc/menu-hien-tai/) for this
+non-commercial academic redesign prototype.
