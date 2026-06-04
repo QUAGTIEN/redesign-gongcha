@@ -7,13 +7,23 @@ around a clearer StoryBrand customer journey:
 
 ## Highlights
 
+- Complete multi-page structure: Home, About, Menu, Stores, and Contact
 - StoryBrand-led homepage and clear calls to action
 - Tea Finder based on mood and taste preferences
 - Searchable and filterable menu with visible prices
 - Drink size, sugar, ice, and topping customization
 - Interactive shopping cart
-- Store finder concept
+- Searchable store directory and location concept
+- Contact form and frequently asked questions
 - Responsive desktop and mobile layouts
+
+## Pages
+
+- `index.html` - StoryBrand homepage and Tea Finder
+- `about.html` - Brand story, values, and tea-making process
+- `menu.html` - Full interactive menu and ordering flow
+- `stores.html` - Store search and directory
+- `contact.html` - Contact topics, form, and FAQ
 
 ## Run Locally
 
@@ -28,4 +38,3 @@ Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 This is an interactive front-end prototype created for academic purposes.
 Product and ordering data are simulated; a backend and database are outside
 the current scope.
-

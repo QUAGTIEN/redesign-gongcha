@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gong Cha Vietnam redesign concept">
-  <title>Gong Cha | Tìm ly trà danh rieng cho ban</title>
+  <title>Gong Cha | Tìm ly trà dành riêng cho bạn</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <div class="announcement">
@@ -17,15 +17,16 @@
   </div>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Gong Cha trang chủ">
+    <a class="brand" href="index.html" aria-label="Gong Cha trang chủ">
       <span class="brand-mark">貢茶</span>
       <span class="brand-name">GONG CHA</span>
     </a>
     <nav class="desktop-nav" aria-label="Điều hướng chính">
-      <a href="#menu">Thực đơn</a>
-      <a href="#finder">Tìm vị của bạn</a>
-      <a href="#craft">Câu chuyện trà</a>
-      <a href="#stores">Cửa hàng</a>
+      <a class="active" href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="menu.html">Thực đơn</a>
+      <a href="stores.html">Cửa hàng</a>
+      <a href="contact.html">Liên hệ</a>
     </nav>
     <div class="header-actions">
       <button class="icon-button" type="button" aria-label="Tìm kiếm"><i data-lucide="search"></i></button>
@@ -200,9 +201,10 @@
     </a>
     <p>Mỗi ngày một ly trà đúng vị bạn.</p>
     <div>
-      <a href="#menu">Thực đơn</a>
-      <a href="#craft">Câu chuyện trà</a>
-      <a href="#stores">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="menu.html">Thực đơn</a>
+      <a href="stores.html">Cửa hàng</a>
+      <a href="contact.html">Liên hệ</a>
     </div>
     <small>Bản thiết kế lại phục vụ mục đích học thuật.</small>
   </footer>
@@ -219,7 +221,7 @@
     <div class="customizer-product">
       <div class="mini-cup milk-cup"><span></span></div>
       <div>
-        <strong id="custom-price">59.000d</strong>
+        <strong id="custom-price">59.000đ</strong>
         <small>Giá đã bao gồm topping mặc định</small>
       </div>
     </div>
@@ -227,7 +229,7 @@
       <legend>Chọn size</legend>
       <div class="segmented" data-option-group="size">
         <button type="button" data-value="M" class="selected">M</button>
-        <button type="button" data-value="L">L <small>+8.000d</small></button>
+        <button type="button" data-value="L">L <small>+8.000đ</small></button>
       </div>
     </fieldset>
     <fieldset>
@@ -250,10 +252,10 @@
     </fieldset>
     <fieldset>
       <legend>Thêm topping</legend>
-      <label class="topping-option"><input type="checkbox" value="Pearl" data-price="8000"><span>Trân châu đen</span><strong>+8.000d</strong></label>
-      <label class="topping-option"><input type="checkbox" value="Milk foam" data-price="10000"><span>Kem sữa Gong Cha</span><strong>+10.000d</strong></label>
+      <label class="topping-option"><input type="checkbox" value="Pearl" data-price="8000"><span>Trân châu đen</span><strong>+8.000đ</strong></label>
+      <label class="topping-option"><input type="checkbox" value="Milk foam" data-price="10000"><span>Kem sữa Gong Cha</span><strong>+10.000đ</strong></label>
     </fieldset>
-    <button class="primary add-cart" type="button" id="add-cart">Thêm vào giỏ · <span id="total-price">59.000d</span></button>
+    <button class="primary add-cart" type="button" id="add-cart">Thêm vào giỏ · <span id="total-price">59.000đ</span></button>
   </aside>
 
   <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
@@ -265,12 +267,12 @@
       <div class="cart-empty"><i data-lucide="shopping-bag"></i><p>Giỏ hàng dang trong.</p><small>Chọn một ly trà và tùy chỉnh theo ý bạn.</small></div>
     </div>
     <div class="cart-footer">
-      <div><span>Tạm tính</span><strong id="cart-total">0d</strong></div>
+      <div><span>Tạm tính</span><strong id="cart-total">0đ</strong></div>
       <button class="primary" type="button">Ti?n h?nh Đặt món <i data-lucide="arrow-right"></i></button>
     </div>
   </aside>
 
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>

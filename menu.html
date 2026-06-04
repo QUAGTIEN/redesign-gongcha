@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thực đơn Gong Cha với giá và tùy chọn rõ ràng"><title>Thực đơn | Gong Cha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <div class="announcement"><span>Giao tận nơi trong 30 phút</span><a href="#menu">Đặt món ngay <i data-lucide="arrow-right"></i></a></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Gong Cha trang chủ"><span class="brand-mark">貢茶</span><span class="brand-name">GONG CHA</span></a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính"><a href="index.html">Trang chủ</a><a href="about.html">Giới thiệu</a><a class="active" href="menu.html">Thực đơn</a><a href="stores.html">Cửa hàng</a><a href="contact.html">Liên hệ</a></nav>
+    <div class="header-actions"><button class="icon-button" type="button" data-focus-search aria-label="Tìm kiếm"><i data-lucide="search"></i></button><button class="cart-button" type="button" aria-label="Mở giỏ hàng"><i data-lucide="shopping-bag"></i><span class="cart-count">0</span></button><button class="primary compact" type="button" data-scroll="#menu">Đặt món</button><button class="icon-button menu-toggle" type="button" aria-label="Mở menu"><i data-lucide="menu"></i></button></div>
+  </header>
+  <main>
+    <section class="menu-page-hero"><div><p class="eyebrow">THỰC ĐƠN GONG CHA</p><h1>Chọn nhanh.<br><em>Đúng vị.</em></h1><p>Giá, hương vị và tùy chọn đều được trình bày rõ ràng để bạn dễ dàng tìm thấy ly trà phù hợp.</p><div class="hero-actions"><button class="primary" type="button" data-scroll="#menu">Xem tất cả món <i data-lucide="arrow-down"></i></button><a class="secondary" href="index.html#finder">Dùng Tea Finder <i data-lucide="sparkles"></i></a></div></div><img src="assets/hero-tea-lineup.png" alt="Bộ sưu tập thức uống Gong Cha"></section>
+    <section class="menu-section section-pad standalone-menu" id="menu">
+      <div class="menu-top"><div class="section-heading left"><p class="eyebrow">KHÁM PHÁ HƯƠNG VỊ</p><h2>Mỗi tâm trạng,<br>một ly trà.</h2><p>Lọc theo loại thức uống hoặc tìm trực tiếp bằng tên và hương vị.</p></div><label class="search-field"><i data-lucide="search"></i><input type="search" id="menu-search" placeholder="Tìm theo tên hoặc hương vị"></label></div>
+      <div class="filter-row" role="tablist" aria-label="Danh mục thức uống"><button class="filter-chip active" type="button" data-filter="all">Tất cả</button><button class="filter-chip" type="button" data-filter="signature">Signature</button><button class="filter-chip" type="button" data-filter="milk">Trà sữa</button><button class="filter-chip" type="button" data-filter="fruit">Trà trái cây</button><button class="filter-chip" type="button" data-filter="pure">Trà nguyên chất</button></div>
+      <div class="product-grid" id="product-grid"></div><p class="empty-state" id="empty-state">Không tìm thấy thức uống phù hợp.</p>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">貢茶</span><span class="brand-name">GONG CHA</span></a><p>Mỗi ngày một ly trà đúng vị bạn.</p><div><a href="about.html">Giới thiệu</a><a href="menu.html">Thực đơn</a><a href="stores.html">Cửa hàng</a><a href="contact.html">Liên hệ</a></div><small>Bản thiết kế lại phục vụ mục đích học thuật.</small></footer>
+  <div class="modal-backdrop" id="modal-backdrop" hidden></div>
+  <aside class="customizer" id="customizer" aria-label="Tùy chỉnh thức uống" aria-hidden="true">
+    <div class="customizer-header"><div><span>TÙY CHỈNH LY CỦA BẠN</span><h2 id="custom-name">Trà sữa trân châu đường đen</h2></div><button class="icon-button" type="button" id="close-customizer" aria-label="Đóng"><i data-lucide="x"></i></button></div>
+    <div class="customizer-product"><div class="mini-cup milk-cup"><span></span></div><div><strong id="custom-price">59.000đ</strong><small>Giá đã bao gồm topping mặc định</small></div></div>
+    <fieldset><legend>Chọn size</legend><div class="segmented" data-option-group="size"><button type="button" data-value="M" class="selected">M</button><button type="button" data-value="L">L <small>+8.000đ</small></button></div></fieldset>
+    <fieldset><legend>Độ ngọt</legend><div class="option-grid" data-option-group="sugar"><button type="button" data-value="0%">0%</button><button type="button" data-value="30%">30%</button><button type="button" data-value="50%" class="selected">50%</button><button type="button" data-value="70%">70%</button><button type="button" data-value="100%">100%</button></div></fieldset>
+    <fieldset><legend>Lượng đá</legend><div class="segmented" data-option-group="ice"><button type="button" data-value="Không đá">Không đá</button><button type="button" data-value="Ít đá" class="selected">Ít đá</button><button type="button" data-value="Bình thường">Bình thường</button></div></fieldset>
+    <fieldset><legend>Thêm topping</legend><label class="topping-option"><input type="checkbox" value="Pearl" data-price="8000"><span>Trân châu đen</span><strong>+8.000đ</strong></label><label class="topping-option"><input type="checkbox" value="Milk foam" data-price="10000"><span>Kem sữa Gong Cha</span><strong>+10.000đ</strong></label></fieldset>
+    <button class="primary add-cart" type="button" id="add-cart">Thêm vào giỏ · <span id="total-price">59.000đ</span></button>
+  </aside>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true"><div class="customizer-header"><div><span>ĐƠN HÀNG CỦA BẠN</span><h2>Giỏ hàng</h2></div><button class="icon-button" type="button" id="close-cart" aria-label="Đóng"><i data-lucide="x"></i></button></div><div class="cart-items" id="cart-items"></div><div class="cart-footer"><div><span>Tạm tính</span><strong id="cart-total">0đ</strong></div><button class="primary" type="button">Tiến hành đặt món <i data-lucide="arrow-right"></i></button></div></aside>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script><script src="app.js?v=2"></script>
+</body>
+</html>

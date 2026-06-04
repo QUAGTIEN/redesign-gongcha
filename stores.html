@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Tìm cửa hàng Gong Cha gần bạn"><title>Cửa hàng | Gong Cha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <div class="announcement"><span>Giao tận nơi trong 30 phút</span><a href="menu.html">Đặt món ngay <i data-lucide="arrow-right"></i></a></div>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">貢茶</span><span class="brand-name">GONG CHA</span></a><nav class="desktop-nav"><a href="index.html">Trang chủ</a><a href="about.html">Giới thiệu</a><a href="menu.html">Thực đơn</a><a class="active" href="stores.html">Cửa hàng</a><a href="contact.html">Liên hệ</a></nav><div class="header-actions"><a class="icon-button" href="#store-search" aria-label="Tìm cửa hàng"><i data-lucide="search"></i></a><a class="cart-button" href="menu.html"><i data-lucide="shopping-bag"></i></a><a class="primary compact" href="menu.html">Đặt món</a><button class="icon-button menu-toggle" type="button"><i data-lucide="menu"></i></button></div></header>
+  <main>
+    <section class="store-page-hero"><div><p class="eyebrow">CỬA HÀNG GONG CHA</p><h1>Ly trà yêu thích<br><em>đang ở gần bạn.</em></h1><p>Tìm địa điểm thuận tiện, xem giờ mở cửa và chọn dịch vụ phù hợp trước khi ghé.</p></div><div class="map-visual large-map"><span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span><span class="map-pin pin-one"><i data-lucide="map-pin"></i></span><span class="map-pin pin-two"><i data-lucide="map-pin"></i></span><span class="map-pin pin-three"><i data-lucide="map-pin"></i></span></div></section>
+    <section class="store-directory section-pad" id="store-search">
+      <div class="directory-controls"><div class="section-heading left"><p class="eyebrow">TÌM ĐỊA ĐIỂM</p><h2>Chọn cửa hàng thuận tiện nhất.</h2></div><label class="search-field wide"><i data-lucide="map-pin"></i><input id="store-query" type="search" placeholder="Tìm theo tên cửa hàng hoặc khu vực"></label></div>
+      <div class="city-filters"><button class="filter-chip active" data-city="all">Tất cả</button><button class="filter-chip" data-city="hcm">TP. Hồ Chí Minh</button><button class="filter-chip" data-city="hanoi">Hà Nội</button><button class="filter-chip" data-city="danang">Đà Nẵng</button></div>
+      <div class="store-layout">
+        <div class="store-list" id="store-list">
+          <article class="store-card" data-city="hcm" data-store="Nguyễn Huệ Quận 1"><span>0.8 KM</span><h3>Gong Cha Nguyễn Huệ</h3><p>Phố đi bộ Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p><div><small><i data-lucide="clock"></i> 09:00 - 22:30</small><small><i data-lucide="shopping-bag"></i> Nhận tại cửa hàng</small></div><a href="menu.html">Đặt tại cửa hàng <i data-lucide="arrow-right"></i></a></article>
+          <article class="store-card" data-city="hcm" data-store="Phan Xích Long Phú Nhuận"><span>2.4 KM</span><h3>Gong Cha Phan Xích Long</h3><p>Phan Xích Long, Quận Phú Nhuận, TP. Hồ Chí Minh</p><div><small><i data-lucide="clock"></i> 08:30 - 22:00</small><small><i data-lucide="wifi"></i> Có chỗ ngồi</small></div><a href="menu.html">Đặt tại cửa hàng <i data-lucide="arrow-right"></i></a></article>
+          <article class="store-card" data-city="hanoi" data-store="Lý Thường Kiệt Hoàn Kiếm"><span>HÀ NỘI</span><h3>Gong Cha Lý Thường Kiệt</h3><p>Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội</p><div><small><i data-lucide="clock"></i> 09:00 - 22:00</small><small><i data-lucide="shopping-bag"></i> Nhận tại cửa hàng</small></div><a href="menu.html">Đặt tại cửa hàng <i data-lucide="arrow-right"></i></a></article>
+          <article class="store-card" data-city="danang" data-store="Bạch Đằng Hải Châu Đà Nẵng"><span>ĐÀ NẴNG</span><h3>Gong Cha Bạch Đằng</h3><p>Bạch Đằng, Quận Hải Châu, Đà Nẵng</p><div><small><i data-lucide="clock"></i> 09:00 - 22:30</small><small><i data-lucide="wifi"></i> Có chỗ ngồi</small></div><a href="menu.html">Đặt tại cửa hàng <i data-lucide="arrow-right"></i></a></article>
+        </div>
+        <aside class="directory-note"><i data-lucide="navigation"></i><h3>Cho phép truy cập vị trí</h3><p>Gong Cha có thể gợi ý cửa hàng gần nhất và ước tính thời gian di chuyển cho bạn.</p><button class="primary" type="button">Dùng vị trí hiện tại</button></aside>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">貢茶</span><span class="brand-name">GONG CHA</span></a><p>Mỗi ngày một ly trà đúng vị bạn.</p><div><a href="about.html">Giới thiệu</a><a href="menu.html">Thực đơn</a><a href="stores.html">Cửa hàng</a><a href="contact.html">Liên hệ</a></div><small>Bản thiết kế lại phục vụ mục đích học thuật.</small></footer>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script><script src="app.js?v=2"></script>
+</body>
+</html>
